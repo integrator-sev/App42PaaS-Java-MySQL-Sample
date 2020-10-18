@@ -1,0 +1,4 @@
+FROM maven:3.6.3-openjdk-8-slim
+RUN apt update && apt install git  -y && mkdir /webapps /build
+RUN mvn clean package -f /build/pom.xml
+RUN cp /build/target/*.war  /webapps/test.war
