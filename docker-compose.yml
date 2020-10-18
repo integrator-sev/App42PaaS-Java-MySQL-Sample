@@ -26,4 +26,4 @@ services:
     build: mvn
     volumes:
       - ./tom:/webapps
-      - ./:/build
+      - ./build:/build
