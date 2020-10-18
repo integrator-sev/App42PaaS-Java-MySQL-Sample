@@ -20,7 +20,7 @@ services:
     ports:
       - "9999:8080"
     volumes:
-      - ./tom:/var/lib/tomcat8/webapps
+      - ./tom:/usr/local/tomcat/webapps
 
   maven:
     build: mvn
