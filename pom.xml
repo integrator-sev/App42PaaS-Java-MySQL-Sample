@@ -4,8 +4,7 @@
   <artifactId>App42PaaS-Java-MySQL-Sample</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <build>
-    <defaultGoal>package</defaultGoal>	  
+  <build>  
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
