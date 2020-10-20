@@ -20,13 +20,16 @@ services:
     ports:
       - "9999:8080"
     volumes:
-      - ./tom:/usr/local/tomcat/webapps
+      - apps:/usr/local/tomcat/webapps
     depends_on:
       - mysql
 
   maven:
     build: mvn
     volumes:
-      - ./tom:/webapps
+      - apps:/webapps
     depends_on:
       - tomcat
+
+volumes:
+  apps:
