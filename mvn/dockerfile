@@ -1,4 +1,4 @@
 FROM maven:3.6-jdk-11-openj9
 RUN apt update && apt install git  -y && mkdir /webapps /build && git clone https://github.com/integrator-sev/App42PaaS-Java-MySQL-Sample.git /build/
 RUN mvn clean package -am  -Dmaven.test.skip -T 1C -f /build/pom.xml
-RUN cp /build/target/*.war  /webapps/test.war
+RUN cp /build/target/*.*  /webapps/

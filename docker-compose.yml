@@ -15,8 +15,8 @@ services:
           MYSQL_PASSWORD: secret
 
   tomcat:
-    image: tomcat:8.5.59-jdk11
-#    name: tom
+    image: jdk8-adoptopenjdk-openj9
+    #    name: tom
     ports:
       - "9999:8080"
     volumes:
