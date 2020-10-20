@@ -4,8 +4,6 @@ services:
   mysql:
     image: mysql:5.7.5
 #    name: mysql5
-    expose:
-      - "3306"
     volumes:
       - ./sql:/var/lib/mysql
     environment:
