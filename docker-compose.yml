@@ -13,7 +13,7 @@ services:
           MYSQL_PASSWORD: secret
 
   tomcat:
-      build: tom
+    build: tom
 #      image: mytom
 #tomcat:8.5-jdk8-openjdk-slim
 #    name: tom
