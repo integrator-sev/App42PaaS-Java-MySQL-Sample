@@ -13,8 +13,8 @@ services:
           MYSQL_PASSWORD: secret
 
   tomcat:
-    image:
       build: tom
+#      image: mytom
 #tomcat:8.5-jdk8-openjdk-slim
 #    name: tom
     ports:
