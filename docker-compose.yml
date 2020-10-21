@@ -22,7 +22,7 @@ services:
     volumes:
       - apps:/usr/local/tomcat/webapps
     links:
-      - "mysql"
+      - mysql
     depends_on:
       - mysql
 
