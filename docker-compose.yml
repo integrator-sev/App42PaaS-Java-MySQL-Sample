@@ -20,7 +20,8 @@ services:
     ports:
       - "9999:8080"
     volumes:
-      - apps:/usr/local/tomcat/webapps
+#      - apps:/usr/local/tomcat/webapps
+      - apps:/opt/tomcat/webapps
     links:
       - mysql
     depends_on:
