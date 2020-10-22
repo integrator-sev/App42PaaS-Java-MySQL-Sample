@@ -13,15 +13,14 @@ services:
           MYSQL_PASSWORD: secret
 
   tomcat:
-    build: tom
-#      image: mytom
-#tomcat:8.5-jdk8-openjdk-slim
+#    build: tom
+    image: tomcat:8.5-jdk8-openjdk-slim
 #    name: tom
     ports:
       - "9999:8080"
     volumes:
-#      - apps:/usr/local/tomcat/webapps
-      - apps:/opt/tomcat/webapps
+      - apps:/usr/local/tomcat/webapps
+#      - apps:/opt/tomcat/webapps
     links:
       - mysql
     depends_on:
